@@ -1,0 +1,150 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Paytone+One);
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	padding: 0 10%;
+	display: flex;
+}
+
+body {
+	background: #FF8C00;
+}
+
+
+.header {
+	font-size: 1rem;
+	padding-top: .5em;
+	padding-bottom: .5em;
+	text-align: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+	margin-bottom: 8vh;
+}
+
+.header-logo {
+	font-size: 3em;
+	margin-bottom: .3em;
+	font-family: 'Paytone One';
+	color: rgba(255,255,255,.7);
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 1em;
+	margin-bottom: 0;
+	letter-spacing: 4px;
+}
+
+
+.buttonStyle {
+	color: white;
+	background-color: transparent;
+	width: 100px;
+	height: 40px;
+    border-radius: 10px;
+    border-color: #fff;
+    border-style: 1px solid;
+    
+}
+
+.cartao {
+	width: 30%;
+	padding: 16px;
+	margin: 10px 5px 5px;
+	display: inline-block;
+	box-sizing: border-box;
+	text-align: left;
+	flex-basis: 190px;
+	flex-grow: 1;
+	border-radius: 4px;
+	position: relative;
+	
+}
+
+	.cartao-text {
+		font-family: 'Open Sans', sans-serif;
+		font-size: 1em;
+		line-height: 120%;
+		text-transform: lowercase;
+		color: #fff;
+		
+	}
+
+	.cartao-date {
+		font-size: 0.9em;
+		font-family: 'Open Sans', sans-serif;
+		font-weight: bold;
+		color: #fff;
+		text-align: right;
+		margin-top: 10px;
+	}
+
+		.cartao--some {
+			opacity: 0;
+			transition: 0.5s ease-in;
+		}
+
+main.container{
+	text-align: justify;
+}
+	main.container:after {
+		content: '';
+		display: inline-block;
+		width: 100%;
+		height: 10px;
+	}
+
+main.mural {
+	text-align: center;
+}
+	.mural {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	#mudaLayout {
+		display: none;
+	}
+
+	@media (min-width: 560px){
+		.cartao {
+			width: 190px;
+			display: inline-block;
+		}
+		#mudaLayout {
+			display: inline-block;
+		}
+	}
+
+	.mural--linhas .cartao {
+		flex-basis: auto;
+		width: auto;
+		display: block;
+	}
+	
+	@media (min-width: 560px) {
+		
+		.cartao--textoPequeno{
+			font-size: 1em;
+			width: 11em;
+			flex-basis: 11em;
+		}
+		
+		.cartao-textoMedio {
+			font-size: 1.5em;
+			width: 9em;
+			flex-basis: 9em;
+		}
+		
+		.cartao-textoGrande {
+			font-size: 2em;
+			width: 6em;
+			flex-basis: 6em;
+		}
+	}
