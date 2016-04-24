@@ -12,7 +12,11 @@
 }
 
 body {
-	background: #FF8C00;
+	background: -webkit-linear-gradient(0deg, #134e5e 10%, #71b280 90%);
+	background: -moz-linear-gradient(0deg, #134e5e 10%, #71b280 90%);
+	background: -ms-linear-gradient(0deg, #134e5e 10%, #71b280 90%);
+	background: -o-linear-gradient(0deg, #134e5e 10%, #71b280 90%);
+    background: linear-gradient(90deg, #134e5e 10%, #71b280 90%);
 }
 
 
@@ -31,14 +35,12 @@ body {
 
 .header-logo {
 	font-size: 3em;
-	margin-bottom: .3em;
 	font-family: 'Paytone One';
-	color: rgba(255,255,255,.7);
-	display: inline-block;
-	vertical-align: middle;
-	margin-right: 1em;
-	margin-bottom: 0;
 	letter-spacing: 4px;
+	margin: 0 0 .3em .1em;
+	vertical-align: middle;
+	color: rgba(255,255,255,.8);
+	display: inline-block;
 }
 
 
